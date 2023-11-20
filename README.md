@@ -1,3 +1,16 @@
+# Description
+Basic Angular Seed v17" is a state-of-the-art Angular project template, crafted to empower the development of a wide range of personal projects through a standalone component architecture. This template capitalizes on the latest Angular features to offer a non-modular, component-centric development approach, streamlining the development process for enhanced agility and flexibility.
+
+## Key Features
+Standalone Component Architecture: This project marks a departure from traditional NgModules, focusing instead on standalone components for a more efficient and streamlined development experience.
+
+Translation Support: Integrated with the ngx-translate library, the project is ready for easy localization and internationalization, enabling global accessibility.
+
+Simplified Project Setup: The elimination of a modular system simplifies the setup process, making it ideal for quick prototyping and agile development in various applications.
+
+Component-Centric Design: Embraces a modern Angular development philosophy, focusing on ease of use, maintainability, and a straightforward approach to building applications.
+
+
 # Kcarrenofrontdev
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.1.
