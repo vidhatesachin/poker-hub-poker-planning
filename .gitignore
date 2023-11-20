@@ -1,18 +1,23 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# Compiled output
+# compiled output
+/.sass-cache
+/.cache
 /dist
 /tmp
 /out-tsc
-/bazel-out
 
-# Node
+# dependencies
 /node_modules
-npm-debug.log
-yarn-error.log
+
+# profiling files
+chrome-profiler-events*.json
 
 # IDEs and editors
-.idea/
+/.idea
+/.vscode
+/*.sublime-workspace
+/*.sublime-project
 .project
 .classpath
 .c9/
@@ -20,7 +25,8 @@ yarn-error.log
 .settings/
 *.sublime-workspace
 
-# Visual Studio Code
+# IDE - VSCode
+.vscode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -28,15 +34,42 @@ yarn-error.log
 !.vscode/extensions.json
 .history/*
 
-# Miscellaneous
+# Archivos de paquetes
+/package-lock.json
+/yarn.lock
+/bower_components
+
+# misc
 /.angular/cache
-.sass-cache/
+/.sass-cache
 /connect.lock
-/coverage
+/coverage/*
+/nyc_output
+/docs/*
 /libpeerconnection.log
+npm-debug.log
+yarn-error.log
 testem.log
 /typings
 
-# System files
+
+# System Files
 .DS_Store
 Thumbs.db
+
+# Archivos de configuración de entorno local
+/environment.local.ts
+/src/environments/*.local.ts
+
+*.log
+*.log.*
+
+# Otros archivos y carpetas
+*.swp
+*~
+*.swp
+*~
+
+# Archivos generados por ng e2e
+/e2e/*.js
+/e2e/*.map
