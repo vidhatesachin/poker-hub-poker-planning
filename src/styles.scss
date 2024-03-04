@@ -1,3 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Roboto', sans-serif; }
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set height to fill viewport vertically */
+
+    .mdc-button.large-button {
+        font-size: 1.5em;
+        padding: 12px 25px;
+        height: auto;
+        width: auto;
+    }
+    .poker-form {
+        width: 600px;
+    }
+    mat-form-field, .block-button {
+        width: 100% !important;
+        margin-bottom: 15px;
+    }
+}

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,5 +7,14 @@ import { CommonModule } from '@angular/common';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+  constructor(private router: Router){
 
+  }
+  ngOnInit(){
+     
+  }
+
+  startNewGame() {
+    this.router.navigate(['/new-game']);
+  }
 }

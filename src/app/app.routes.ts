@@ -11,6 +11,11 @@ export const rootRouterConfig: Routes = [
       loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule),
       data: { title: 'Welcome' }
     },
+    {
+      path: 'new-game',
+      loadChildren: () => import('./pages/game/game.module').then(m => m.GameModule),
+      data: { title: 'New game' }
+    },
     { 
       path: '**', 
       redirectTo: 'sessions/404'
