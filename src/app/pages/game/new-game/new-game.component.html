@@ -1,0 +1,24 @@
+<div class="center-container">
+    <form [formGroup] = "gameForm" (ngSubmit)="onSubmit()" class="poker-form">
+        <mat-form-field appearance="outline" [ngStyle]="{'display':!this.roomParam ? 'block':'none'}">
+          <mat-label>Name the game</mat-label>
+          <input placeholder="e.g. MIS - Sprint 4 Planning Poker" matInput type="text" id="gameName" formControlName="gameName" required>
+        </mat-form-field>
+        
+        <mat-form-field appearance="outline">
+            <mat-label>Your display name</mat-label>
+            <input matInput type="text" id="displayName" formControlName="displayName" required>
+        </mat-form-field>
+         
+        <mat-form-field appearance="outline" [ngStyle]="{'display':!this.roomParam ? 'block':'none'}">
+          <mat-label>Game type</mat-label>
+          <mat-select id="gameType" formControlName="gameType" required>
+            <mat-option *ngFor="let type of gameTypes" [value]="type.value">{{ type.label }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        
+        <button type="submit" mat-raised-button color="primary" class="large-button block-button">Lets go!</button>
+    </form>
+      
+    
+</div>

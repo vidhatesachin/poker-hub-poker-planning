@@ -1,0 +1,8 @@
+<p>{{socketService.roomUrl}}</p>
+
+<p>{{ socketService.isGameInitiator ? 'I am '+displayName+' the owner' : 'I am '+displayName+' participant'}}</p>
+
+
+<p>I belong to {{roomId}} </p>
+
+<p *ngFor="let item of users"> {{item}} </p>
