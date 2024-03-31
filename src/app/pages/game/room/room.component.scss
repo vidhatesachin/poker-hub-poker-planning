@@ -1,0 +1,48 @@
+
+.poker-table-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.poker-table {
+    width: 300px;
+    height: 125px;
+    background-color: #c8dcf5;
+    border-radius: 15px; /* Rounded corners */
+    transition: box-shadow 0.3s; /* Transition for box shadow */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Required for absolute positioning of the button */
+}
+  
+.poker-table:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Border shadow */
+}
+  
+.poker-table button {
+    position: absolute;
+    z-index: 1; /* Ensure the button is above the rectangle background */
+}
+.poker-table p {
+    position: absolute;
+    z-index: 1; /* Ensure the button is above the rectangle background */
+    color: #666666;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.participant {
+    width: 35px;
+    height: 60px;
+    background-color: #ff0000; /* Example color */
+    border-radius: 20%; /* Rounded corners */
+    position: absolute;
+}
+  
+/* Logic to position participants based on the number of participants */
+.participant:nth-child(1) { bottom: 0px; left: 45%; top:135px; transform: translateX(-50%); }
+.participant:nth-child(2) { top: -10px; left: 50%; transform: translateX(-50%); }
+.participant:nth-child(3) { bottom: 0; left: 70%; }
+.participant:nth-child(4) { top: 0; left: 70%; }
